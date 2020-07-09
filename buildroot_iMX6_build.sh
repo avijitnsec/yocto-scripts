@@ -6,8 +6,10 @@ fix_package()
 	echo	"old hash	->	$4"
 	echo	"new hash	->	$5"
 
-	filename_mk=$(pwd -P)/buildroot/package/$1/$1.mk
-	filename_hash=$(pwd -P)/buildroot/package/$1/$1.hash
+	root=$(pwd -P)
+
+	filename_mk=$root/buildroot/package/$1/$1.mk
+	filename_hash=$root/buildroot/package/$1/$1.hash
 
 	# Replace pacage version and hash value
 	sed -i "s/$2/$3/g" "$filename_mk"
@@ -15,7 +17,7 @@ fix_package()
 	sed -i "s/$4/$5/g" "$filename_hash"
 
 	# Remove all patch files
-	rm -rf $(pwd -P)/buildroot/package/$1/*.patch
+	rm -rf $root/buildroot/package/$1/*.patch
 
 }
 

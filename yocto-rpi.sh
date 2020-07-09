@@ -1,5 +1,5 @@
 echo 	"Make sure all the packages required for Yocto build is installed."
-echo 	"TODO: Script can be extended to install any package that is needed but installed yet."  
+echo 	"TODO: Script can be extended to install any package that is needed but installed yet."
 # sudo apt-get update
 # sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib \
 #     build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
@@ -16,7 +16,7 @@ mkdir 	${root}/src
 # Clone Yocto source
 git clone -b rocko git://git.yoctoproject.org/poky ${root}/src/poky
 
-# Clone layers for HW and services 
+# Clone layers for HW and services
 
 # Mender is for OTA
 git clone -b rocko git://github.com/mendersoftware/meta-mender ${root}/src/meta-mender

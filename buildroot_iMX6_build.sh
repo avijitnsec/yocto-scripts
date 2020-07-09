@@ -15,7 +15,7 @@ fix_package()
 	sed -i "s/$4/$5/g" "$filename_hash"
 
 	# Remove all patch files
-	rm -rf ../buildroot/package/$1/*.patch
+	rm -rf $(pwd -P)/buildroot/package/$1/*.patch
 
 }
 

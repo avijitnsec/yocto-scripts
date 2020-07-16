@@ -71,7 +71,7 @@ code_sync()
 
 build()
 {
-	DISTRO=fsl-imx-wayland MACHINE=imx6qpsabreauto source fsl-setup-release.sh -b Build
+	DISTRO=fsl-imx-wayland MACHINE=imx6slevk source fsl-setup-release.sh -b Build
 	bitbake fsl-image-qt5-validation-imx
 }
 

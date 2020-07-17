@@ -12,7 +12,7 @@ echo 	"TODO: Add check and remove this comment."
 
 root=$(pwd -P)
 
-# One time only setup 
+# One time only setup
 setup()
 {
 	sudo apt-get install repo
@@ -25,7 +25,7 @@ code_sync()
 	mkdir imx-yocto-bsp
 	cd imx-yocto-bsp
 	repo init -u http://github.com/boundarydevices/boundary-bsp-platform -b zeus
-	repo sync 
+	repo sync
 }
 
 # Modify local.conf - platform specific.
@@ -79,4 +79,4 @@ setup
 code_sync
 build
 instructions
-
+# gst-launch-1.0 imxv4l2videosrc device=/dev/video1 ! autovideosink

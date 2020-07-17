@@ -8,7 +8,7 @@ echo 	"TODO: Script can be extended to install any package that is needed but in
 echo 	"This scipt is expected to run from a empty folder (for the first time) or a folder where the script was run previously."
 echo 	"TODO: Add check and remove this comment."
 
-root	=	$(pwd -P)
+root=$(pwd -P)
 
 # Source should be inside this directory
 mkdir 	${root}/src

@@ -75,8 +75,9 @@ instructions()
 }
 
 
-setup
+#setup
 code_sync
 build
 instructions
+# bitbake boundary-eval-image
 # gst-launch-1.0 imxv4l2videosrc device=/dev/video1 ! autovideosink

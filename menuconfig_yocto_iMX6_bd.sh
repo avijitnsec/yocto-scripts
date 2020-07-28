@@ -16,6 +16,9 @@ root=$(pwd -P)
 setup()
 {
 	sudo apt-get install repo
+	# For menuconfig
+	sudo apt-get install libncurses5-dev libncursesw5-dev
+	#sudo apt-get install libncurses-dev
 }
 
 
